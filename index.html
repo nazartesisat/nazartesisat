@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nazar Tesisat | İnegöl Kombi Servisi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;left:0;width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-weight:900;
+font-size:22px;
+color:#22c55e;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:30px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{color:#22c55e}
+
+/* HERO */
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero video{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.65);
+z-index:-1;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:900;
+margin-bottom:20px;
+}
+
+.hero span{color:#22c55e}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+.btn{
+padding:15px 35px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+margin:10px;
+display:inline-block;
+transition:.3s;
+}
+
+.btn-primary{
+background:#22c55e;
+color:#0f172a;
+}
+
+.btn-outline{
+border:2px solid #22c55e;
+color:#22c55e;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTIONS */
+.section{
+padding:120px 8%;
+text-align:center;
+background:#111827;
+}
+
+.section h2{
+font-size:42px;
+margin-bottom:60px;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.card{
+background:#1f2937;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+position:relative;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
+}
+
+.card-content h3{
+margin-bottom:15px;
+}
+
+/* WHATSAPP PREMIUM */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:#fff;
+padding:15px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:10px;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+animation:pulse 2s infinite;
+z-index:999;
+}
+
+.whatsapp img{
+width:24px;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}
+70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
+100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+}
+
+/* FOOTER */
+footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">NAZAR TESİSAT</div>
+<nav>
+<a href="#anasayfa">Ana Sayfa</a>
+<a href="#hizmetler">Hizmetler</a>
+<a href="#iletisim">İletişim</a>
+</nav>
+</header>
+
+<section class="hero" id="anasayfa">
+
+<video autoplay muted loop playsinline>
+<source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+</video>
+
+<div>
+<h1><span>İNEGÖL</span><br>KOMBİ SERVİSİ</h1>
+<p>7/24 Acil Servis – Garantili İşçilik – Hızlı Müdahale</p>
+<a href="tel:05318715581" class="btn btn-primary">HEMEN ARA</a>
+<a href="https://wa.me/905318715581" class="btn btn-outline">WHATSAPP</a>
+</div>
+</section>
+
+<section class="section" id="hizmetler">
+<h2>Hizmetlerimiz</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="assets/images/kombi.jpg">
+<div class="card-content">
+<h3>Kombi Arıza Onarım</h3>
+<p>Tüm marka kombiler için uzman teknik servis hizmeti.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="assets/images/petek.jpg">
+<div class="card-content">
+<h3>Petek Temizleme</h3>
+<p>Makinalı sistem ile yüksek verim ve tasarruf.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="assets/images/kacak.jpg">
+<div class="card-content">
+<h3>Su Kaçağı Tespiti</h3>
+<p>Kırmadan cihazla nokta tespiti.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="iletisim">
+<h2>İletişim</h2>
+<p>📍 Bursa / İnegöl</p>
+<p>📞 0531 871 55 81</p>
+<p>💬 WhatsApp Destek Hattı</p>
+</section>
+
+<footer>
+© 2026 Nazar Tesisat | Tüm Hakları Saklıdır
+</footer>
+
+<a href="https://wa.me/905318715581" class="whatsapp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+WhatsApp Destek
+</a>
+
+</body>
+</html>
